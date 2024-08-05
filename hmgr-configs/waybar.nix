@@ -2,6 +2,9 @@
 # amyipdev's nixos config
 # (c) 2024 Amy Parker (amyipdev)
 
+let
+  platform = import ../platform.nix;
+in
 {
   enable = true;
   settings = {
@@ -15,7 +18,7 @@
       position = "top";
       height = 30;
       output = [
-        "HDMI-A-1"
+	platform.waybar-monitor
       ];
       cpu = {
         interval = 1;
@@ -34,8 +37,8 @@
       };
       "custom/clock" = {
         format = "{}";
-        exec = "/home/amy/scripts/clock.sh";
-        on-click = "/home/amy/scripts/toggleClock.sh";
+        exec = ../scripts/clock.sh;
+        on-click = ../scripts/toggleClock.sh;
       };
       modules-left = [ "hyprland/workspaces" ];
       modules-center = [ "hyprland/window" ];
