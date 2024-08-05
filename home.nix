@@ -37,6 +37,7 @@ in
     services = {
       gpg-agent = import ./hmgr-configs/gpg.nix;
       hypridle = import ./hmgr-configs/hypridle.nix;
+      hyprpaper = import ./hmgr-configs/hyprpaper.nix;
       kbfs.enable = true;
       keybase.enable = true;
     };

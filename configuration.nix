@@ -52,8 +52,8 @@ in
   # Mandatory enables; safe to ignore
   programs.firefox.enable = true;
   programs.hyprland = {
-    #enable = true;
-    #xwayland.enable = true;
+    enable = true;
+    xwayland.enable = true;
   };
   programs.wireshark = {
     enable = true;
