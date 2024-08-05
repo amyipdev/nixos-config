@@ -46,6 +46,6 @@ in
   '';
   envExtra = ''
     export PATH="$PATH:/home/amy/.config/emacs/bin"
-    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python313}/lib/pkgconfig"
+    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python312}/lib/pkgconfig"
   '';
 }

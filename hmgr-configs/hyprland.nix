@@ -46,7 +46,7 @@ in
       ];
     };
     master = {
-      new_is_master = true;
+      new_status = "master";
     };
     misc = {
       force_default_wallpaper = -1;

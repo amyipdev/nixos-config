@@ -35,7 +35,7 @@ in
     nodejs_22
     php83
     pkg-config
-    python313
+    python312
     rustup
     sbcl
 
@@ -122,7 +122,7 @@ in
     utop
   ]) ++ (with pkgs.php83Packages; [
     composer
-  ]) ++ (with pkgs.python313Packages; [
+  ]) ++ (with pkgs.python312Packages; [
     isort
     nose
     setuptools
