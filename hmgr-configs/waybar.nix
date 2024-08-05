@@ -18,7 +18,7 @@ in
       position = "top";
       height = 30;
       output = [
-	platform.waybar-monitor
+	platform.waybar.monitor
       ];
       cpu = {
         interval = 1;
@@ -42,8 +42,8 @@ in
       };
       modules-left = [ "hyprland/workspaces" ];
       modules-center = [ "hyprland/window" ];
-      modules-right = [ "hyprland/language" "wireplumber" "cpu" "load" "memory" "custom/clock" ];
-    };
+      modules-right = [ "hyprland/language" "wireplumber" "cpu" "load" "memory" ] ++ platform.waybar.extraModuleNames ++ [ "custom/clock" ];
+    } // platform.waybar.extraModules;
   };
   style = ''
     * {
