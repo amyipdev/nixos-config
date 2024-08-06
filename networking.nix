@@ -13,4 +13,9 @@ in
   };
 
   #networking.firewall = {};
+
+  networking.extraHosts = ''
+    # HTB
+    10.10.11.25 greenhorn.htb
+  '';
 }

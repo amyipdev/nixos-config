@@ -63,11 +63,14 @@ in
     tailscale
     terraform
     tree
+    zip
+    unzip
 
     # Cybersecurity - General
     checksec
     metasploit
     nmap
+    openvpn
 
     # Cybersecurity - Wireless
     aircrack-ng
