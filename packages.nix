@@ -32,12 +32,14 @@ in
     gotests
     gotools
     jdk22
+    mono5
     nodejs_22
     php83
     pkg-config
     python312
     rustup
     sbcl
+    wineWow64Packages.waylandFull
 
     # Developer/CLI utilities
     contrast
@@ -60,6 +62,7 @@ in
     ripgrep
     shellcheck
     stylelint
+    subversion
     tailscale
     terraform
     tree
@@ -108,6 +111,7 @@ in
     kitty
     libreoffice
     nemo
+    nextcloud-client
     transmission_4-qt6
 
     # Libraries
