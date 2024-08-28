@@ -39,6 +39,7 @@ in
     python312
     rustup
     sbcl
+    texliveFull
     wineWow64Packages.waylandFull
 
     # Developer/CLI utilities
