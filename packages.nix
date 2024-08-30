@@ -19,6 +19,7 @@ in
     # Toolchains
     autoconf
     automake
+    clang-tools
     cmake
     degit
     dune_3
@@ -66,6 +67,7 @@ in
     subversion
     tailscale
     terraform
+    tmux
     tree
     zip
     unzip
