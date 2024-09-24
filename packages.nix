@@ -19,11 +19,14 @@ in
     # Toolchains
     autoconf
     automake
+    bison
+    bisoncpp
     clang-tools
     cmake
     degit
     dune_3
     editorconfig-core-c
+    flex
     gcc
     glslang
     gnumake
@@ -34,6 +37,7 @@ in
     gotools
     jdk22
     mono5
+    ninja
     nodejs_22
     php83
     pkg-config
@@ -60,6 +64,8 @@ in
     nixfmt-rfc-style
     pipenv
     pipx
+    pwalarmd
+    pwalarmctl
     qemu_full
     ripgrep
     shellcheck
@@ -93,6 +99,7 @@ in
 
     # System utilities
     btop
+    sysbench
 
     # Games
     doomretro
@@ -108,6 +115,7 @@ in
     waybar
     wl-clipboard
     wofi
+    zlib
 
     # General desktop utilities
     inkscape-with-extensions
@@ -115,9 +123,11 @@ in
     libreoffice
     nemo
     nextcloud-client
+    obs-studio
     transmission_4-qt6
 
     # Libraries
+    glib
     libnotify
     libtool
 
@@ -136,6 +146,13 @@ in
     isort
     nose
     setuptools
+  ]) ++ (with pkgs.obs-studio-plugins; [
+    wlrobs
+    obs-vaapi
+    obs-webkitgtk
+    obs-vkcapture
+    obs-gstreamer
+    obs-multi-rtmp
   ]);
 
   # System packages don't need to be categorized,

@@ -41,12 +41,13 @@ in
     ssh-maria = "ssh -fNL 3306:10.2.0.3:3306 root@amyip.net -p 65111";
     ssh-sappho-portal = "ssh -fNL 8006:10.1.0.1:8006 root@amyip.net -p 65111";
     fpraytime = "ipraytime --latitude 33.876680 --longitude -117.953430 -a 4";
+    nix-shell = "nix-shell --pure";
   };
   initExtra = ''
     [[ ! -f ${../dots/p10k.zsh} ]] | source ${../dots/p10k.zsh}
   '';
   envExtra = ''
     export PATH="$PATH:/home/amy/.config/emacs/bin"
-    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python312}/lib/pkgconfig"
+    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python312}/lib/pkgconfig:${pkgs.glib.dev}/lib/pkgconfig:${pkgs.zlib.dev}/lib/pkgconfig"
   '';
 }
