@@ -99,6 +99,9 @@ in
 
     # System utilities
     btop
+    openconnect
+    networkmanager-openconnect
+    networkmanagerapplet
     sysbench
 
     # Games

@@ -60,6 +60,7 @@ in
     package = pkgs.wireshark;
   };
   programs.zsh.enable = true;
+  programs.nm-applet.enable = true;
 
   # Assorted graphical settings
   qt.platformTheme = "gtk2";
