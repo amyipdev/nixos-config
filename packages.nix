@@ -127,12 +127,14 @@ in
     nemo
     nextcloud-client
     obs-studio
+    rpi-imager
     transmission_4-qt6
 
     # Libraries
     glib
     libnotify
     libtool
+    xmlstarlet
 
     # Packages with conflicts
     #dart

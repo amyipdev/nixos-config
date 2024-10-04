@@ -42,6 +42,7 @@ in
     ssh-sappho-portal = "ssh -fNL 8006:10.1.0.1:8006 root@amyip.net -p 65111";
     fpraytime = "ipraytime --latitude 33.876680 --longitude -117.953430 -a 4";
     nix-shell = "nix-shell --pure";
+    nix-shell-impure = "nix-shell --impure";
   };
   initExtra = ''
     [[ ! -f ${../dots/p10k.zsh} ]] | source ${../dots/p10k.zsh}
