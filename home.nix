@@ -15,7 +15,7 @@ in
     isNormalUser = true;
     description = "Amy Parker";
     # TODO: profile picture through AccountsService
-    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" "libvirtd" ];
   };
   environment.pathsToLink = [ "/share/zsh" ];
 
@@ -25,6 +25,7 @@ in
     home.stateVersion = platform.stateVersion;
 
     gtk = import ./hmgr-configs/gtk.nix;
+    dconf.settings = import ./hmgr-configs/dconf.nix;
 
     programs = {
       git = import ./hmgr-configs/git.nix;

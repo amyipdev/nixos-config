@@ -36,6 +36,7 @@ in
     gotests
     gotools
     jdk22
+    melonDS
     mono5
     ninja
     nodejs_22
@@ -48,6 +49,7 @@ in
     wineWow64Packages.waylandFull
 
     # Developer/CLI utilities
+    bear
     contrast
     curlFull
     emacs
@@ -75,8 +77,8 @@ in
     terraform
     tmux
     tree
-    zip
     unzip
+    zip
 
     # Cybersecurity - General
     checksec
@@ -134,6 +136,7 @@ in
     glib
     libnotify
     libtool
+    imagemagick
     xmlstarlet
 
     # Packages with conflicts

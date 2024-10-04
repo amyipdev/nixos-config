@@ -62,6 +62,9 @@ in
   programs.zsh.enable = true;
   programs.nm-applet.enable = true;
 
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # Assorted graphical settings
   qt.platformTheme = "gtk2";
 }
