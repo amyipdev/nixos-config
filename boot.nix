@@ -34,7 +34,7 @@
     systemd = {
       enable = true;
       emergencyAccess = true;
-      enableTpm2 = true;
+      tpm2.enable = true;
     };
   };
 

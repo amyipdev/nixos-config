@@ -35,14 +35,14 @@ in
     gore
     gotests
     gotools
-    jdk22
+    jdk23
     melonDS
     mono5
     ninja
     nodejs_22
     php83
     pkg-config
-    python312
+    python313
     rustup
     sbcl
     texliveFull
@@ -150,9 +150,7 @@ in
     utop
   ]) ++ (with pkgs.php83Packages; [
     composer
-  ]) ++ (with pkgs.python312Packages; [
-    isort
-    nose
+  ]) ++ (with pkgs.python313Packages; [
     setuptools
   ]) ++ (with pkgs.obs-studio-plugins; [
     wlrobs
