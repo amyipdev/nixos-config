@@ -9,6 +9,10 @@ in
   enable = true;
   plugins = [ ];
   settings = {
+    env = [
+        "XCURSOR_THEME,Adwaita"
+        "XCURSOR_SIZE,24"
+    ];
     general = {
       gaps_in = 15;
       gaps_out = 50;

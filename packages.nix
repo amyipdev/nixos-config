@@ -60,6 +60,7 @@ in
     gnupg
     highlight
     html-tidy
+    htop
     hyfetch
     jsbeautifier
     magic-wormhole
@@ -173,7 +174,9 @@ in
     nerdfonts
     niv
     python3
+    rose-pine-cursor
     sbctl
+    sshfs
     stress-ng
     vim
     wget

@@ -40,6 +40,7 @@ in
     ssh-sappho = "ssh root@amyip.net -p 65111";
     ssh-maria = "ssh -fNL 3306:10.2.0.3:3306 root@amyip.net -p 65111";
     ssh-sappho-portal = "ssh -fNL 8006:10.1.0.1:8006 root@amyip.net -p 65111";
+    ssh-hydra = "nmcli con up UCI; ssh amy@hydra.ics.uci.edu";
     fpraytime = "ipraytime --latitude 33.876680 --longitude -117.953430 -a 4";
     nix-shell = "nix-shell --pure";
     nix-shell-impure = "nix-shell --impure";
