@@ -47,6 +47,7 @@ in
     sbcl
     texliveFull
     wineWow64Packages.waylandFull
+    xml2rfc
 
     # Developer/CLI utilities
     bear

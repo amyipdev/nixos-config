@@ -30,6 +30,7 @@
   # if it works on Fedora, it should work here...
   services.printing.enable = true;
   services.tailscale.enable = true;
+  services.avahi.enable = true;
 
   systemd.services.NetworkManager-wait-online.enable = false;
 }
