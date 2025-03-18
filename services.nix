@@ -31,6 +31,7 @@
   services.printing.enable = true;
   services.tailscale.enable = true;
   services.avahi.enable = true;
+  services.fprintd.enable = true;
 
   systemd.services.NetworkManager-wait-online.enable = false;
 }

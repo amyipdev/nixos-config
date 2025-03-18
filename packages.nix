@@ -80,6 +80,7 @@ in
     tmux
     tree
     unzip
+    valgrind
     zip
 
     # Cybersecurity - General
@@ -170,6 +171,7 @@ in
   systemPackages = with pkgs; [
     #android-studio-full -- too much space, too much broken, begoneth
     dig
+    fprintd
     hyprland
     inetutils
     killall

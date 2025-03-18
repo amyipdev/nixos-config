@@ -76,6 +76,7 @@ in
   };
   programs.zsh.enable = true;
   programs.nm-applet.enable = true;
+  programs.steam.enable = true;
 
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
