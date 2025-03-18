@@ -23,7 +23,7 @@ in
     bisoncpp
     clang-tools
     cmake
-    degit
+    #degit -- broken: #391032
     dune_3
     editorconfig-core-c
     flex
@@ -132,7 +132,7 @@ in
     nemo
     nextcloud-client
     obs-studio
-    rpi-imager
+    # rpi-imager -- doesn't work, and now conflicts with zlib!
     transmission_4-qt6
 
     # Libraries
@@ -168,7 +168,7 @@ in
   # System packages don't need to be categorized,
   # but should be alphabetically sorted
   systemPackages = with pkgs; [
-    android-studio-full
+    #android-studio-full -- too much space, too much broken, begoneth
     dig
     hyprland
     inetutils
