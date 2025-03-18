@@ -125,6 +125,7 @@ in
     zlib
 
     # General desktop utilities
+    gnucash
     inkscape-with-extensions
     kitty
     libreoffice
@@ -153,6 +154,7 @@ in
   ]) ++ (with pkgs.php83Packages; [
     composer
   ]) ++ (with pkgs.python313Packages; [
+    numpy
     setuptools
   ]) ++ (with pkgs.obs-studio-plugins; [
     wlrobs
