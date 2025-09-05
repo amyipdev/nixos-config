@@ -37,7 +37,7 @@ in
     gotools
     jdk23
     melonDS
-    mono5
+    mono
     ninja
     nodejs_22
     php83
@@ -51,6 +51,7 @@ in
 
     # Developer/CLI utilities
     bear
+    blahaj
     contrast
     curlFull
     emacs
@@ -64,13 +65,15 @@ in
     htop
     hyfetch
     jsbeautifier
+    jq
     magic-wormhole
     nixfmt-rfc-style
     pipenv
     pipx
     pwalarmd
     pwalarmctl
-    qemu_full
+    #qemu_full
+    qemu
     ripgrep
     shellcheck
     stylelint
@@ -110,6 +113,7 @@ in
     sysbench
 
     # Games
+    dolphin-emu
     doomretro
 
     # Backend utilities
@@ -134,6 +138,8 @@ in
     nextcloud-client
     obs-studio
     # rpi-imager -- doesn't work, and now conflicts with zlib!
+    signal-cli
+    sqlcipher
     transmission_4-qt6
 
     # Libraries
@@ -164,6 +170,8 @@ in
     obs-vkcapture
     obs-gstreamer
     obs-multi-rtmp
+  ]) ++ (with pkgs.perl540Packages; [
+    FinanceQuote
   ]);
 
   # System packages don't need to be categorized,

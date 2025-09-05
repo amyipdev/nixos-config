@@ -7,7 +7,7 @@
   userName = "Amy Parker";
   userEmail = "amy@amyip.net";
   signing = {
-    key = "7786034BD52149F51B0A2A14B1122F04E962DDC5";
+    key = "49C853C284C8B26F921F18DFEE9B60638AD5B41B";
     signByDefault = true;
   };
 }

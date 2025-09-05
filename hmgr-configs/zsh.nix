@@ -44,12 +44,13 @@ in
     fpraytime = "ipraytime --latitude 33.876680 --longitude -117.953430 -a 4";
     nix-shell = "nix-shell --pure";
     nix-shell-impure = "nix-shell --impure";
+    build-lxc = "nix run github:nix-community/nixos-generators -- -f proxmox-lxc";
   };
   initExtra = ''
     [[ ! -f ${../dots/p10k.zsh} ]] | source ${../dots/p10k.zsh}
   '';
   envExtra = ''
     export PATH="$PATH:/home/amy/.config/emacs/bin"
-    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python312}/lib/pkgconfig:${pkgs.glib.dev}/lib/pkgconfig:${pkgs.zlib.dev}/lib/pkgconfig"
+    export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:${pkgs.libressl.dev}/lib/pkgconfig:${pkgs.python312}/lib/pkgconfig:${pkgs.glib.dev}/lib/pkgconfig:${pkgs.zlib.dev}/lib/pkgconfig:${pkgs.sqlcipher}/lib/pkgconfig"
   '';
 }
