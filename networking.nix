@@ -17,5 +17,6 @@ in
   networking.extraHosts = ''
     # HTB
     10.10.11.25 greenhorn.htb
+    127.0.0.251 ocverify.amyip.net
   '';
 }
