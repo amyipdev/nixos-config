@@ -130,6 +130,7 @@ in
     zlib
 
     # General desktop utilities
+    element-desktop
     gnucash
     inkscape-with-extensions
     kitty
