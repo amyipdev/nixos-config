@@ -167,7 +167,6 @@ in
   ]) ++ (with pkgs.obs-studio-plugins; [
     wlrobs
     obs-vaapi
-    obs-webkitgtk
     obs-vkcapture
     obs-gstreamer
     obs-multi-rtmp

@@ -70,9 +70,6 @@ in
         natural_scroll = false;
       };
     };
-    gestures = {
-      workspace_swipe = false;
-    };
     exec = [
       (builtins.toString ../scripts/restart-waybar.sh)
     ];

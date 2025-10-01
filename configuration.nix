@@ -7,8 +7,8 @@
 { config, lib, pkgs, ... }:
 
 let
-  emacs-overlay = import (builtins.fetchTarball https://github.com/nix-community/emacs-overlay/archive/master.tar.gz);
-  lanzaboote = import (builtins.fetchTarball https://github.com/nix-community/lanzaboote/archive/master.tar.gz);
+  emacs-overlay = import (builtins.fetchTarball "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz");
+  lanzaboote = import (builtins.fetchTarball "https://github.com/nix-community/lanzaboote/archive/master.tar.gz");
   packages = import ./packages.nix;
   platform = import ./platform.nix;
 in
